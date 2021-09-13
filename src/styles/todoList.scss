@@ -1,0 +1,10 @@
+.todo-list {
+  max-width: 500px;
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba($color: #000000, $alpha: 0.1);
+}

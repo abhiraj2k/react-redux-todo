@@ -1,0 +1,38 @@
+.bottom-bar {
+  width: 100%;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+  .bottom-bar__bottom-strips {
+    content: "";
+    z-index: -10;
+    position: absolute;
+    width: 98%;
+    left: 1%;
+    bottom: -6px;
+    height: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .bottom-bar__type {
+    span {
+      cursor: pointer;
+      padding: 3px 5px;
+      &.active {
+        border: 1px solid #777;
+        border-radius: 4px;
+        margin: 0 2px;
+      }
+    }
+  }
+  .bottom-bar__clear {
+    cursor: pointer;
+  }
+}

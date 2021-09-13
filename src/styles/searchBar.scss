@@ -1,0 +1,27 @@
+.search-form {
+  width: 100%;
+  .search-form__input-wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    .search-form__icon-wrapper {
+      padding-left: 15px;
+      svg {
+        color: rgb(78, 78, 78);
+        font-size: 28px;
+      }
+    }
+    .search-form__input {
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 20px 10px;
+      font-size: 18px;
+      &::placeholder {
+        font-style: italic;
+        font-weight: 300;
+        color: #ccc;
+      }
+    }
+  }
+}

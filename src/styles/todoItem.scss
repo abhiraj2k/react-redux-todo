@@ -1,0 +1,39 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 22px;
+  .todo-item__checkbox {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    min-width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      color: rgb(0, 170, 37);
+    }
+  }
+  .todo-item__name {
+    width: 100%;
+    text-align: left;
+    padding: 0 15px;
+    &.checked {
+      text-decoration: line-through;
+      color: #bbb;
+    }
+  }
+  .todo-item__delete {
+    display: none;
+    cursor: pointer;
+  }
+  &:hover {
+    .todo-item__delete {
+      display: inline-block;
+    }
+  }
+}
